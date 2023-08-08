@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Survey Khách Hàng</title>
+</head>
+
+<body>
+    <h1>Marker reasrch servey</h1>
+
+    <form action="/submit_survey" method="post">
+        <label for="name">1. Tên của bạn:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">2. Tuổi của bạn:</label><br>
+        <select id="age" name="age">
+            <option value="under_18">Dưới 18 tuổi</option>
+            <option value="18_24">18-24 tuổi</option>
+            <option value="25_34">25-34 tuổi</option>
+            <option value="35_44">35-44 tuổi</option>
+            <option value="45_54">45-54 tuổi</option>
+            <option value="over_55">Trên 55 tuổi</option>
+        </select><br><br>
+
+        <label for="previous_experience">3. Bạn đã từng sử dụng sản phẩm/dịch vụ của chúng tôi trước đây
+            không?</label><br>
+        <input type="radio" id="previous_experience_yes" name="previous_experience" value="yes">
+        <label for="previous_experience_yes">Có</label><br>
+        <input type="radio" id="previous_experience_no" name="previous_experience" value="no">
+        <label for="previous_experience_no">Không</label><br><br>
+
+        <label for="rating">4. Nếu câu trả lời ở câu hỏi trên là "Có", xin vui lòng cho biết sản phẩm/dịch vụ nào bạn đã
+            sử dụng và đánh giá tổng quan về chất lượng:</label><br>
+        <textarea id="rating" name="rating"></textarea><br><br>
+
+        <label for="issues">5. Bạn đã từng gặp bất kỳ vấn đề nào khi sử dụng sản phẩm/dịch vụ của chúng tôi? Nếu có, hãy
+            cho chúng tôi biết chi tiết:</label><br>
+        <textarea id="issues" name="issues"></textarea><br><br>
+
+        <label for="differentiation">6. Theo bạn, điều gì làm cho sản phẩm/dịch vụ của chúng tôi khác biệt so với các
+            đối thủ cạnh tranh?</label><br>
+        <textarea id="differentiation" name="differentiation"></textarea><br><br>
+
+        <label for="improvements">7. Bạn có bất kỳ góp ý hoặc đề xuất nào để chúng tôi cải thiện sản phẩm/dịch
+            vụ?</label><br>
+        <textarea id="improvements" name="improvements"></textarea><br><br>
+        <input type="number" id="recommendation" name="recommendation" min="1" max="10"><br><br>
+
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+
+</html>
